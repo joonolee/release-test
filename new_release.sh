@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 새 버전번호 입력
-read -p "릴리즈할 버전번호(예: 1.0.0)>  " NEW_VERSION
+read -p "릴리즈할 버전번호(예: 1.0.0)를 입력하세요:  " NEW_VERSION
 
 # 버전번호 형식 체크
 if [[ ! $NEW_VERSION =~ [0-9]+\.[0-9]+\.[0-9]+ ]]
