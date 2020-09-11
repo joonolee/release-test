@@ -19,5 +19,5 @@ sed -i "s/^version = '.*-SNAPSHOT'$/version = '${NEW_VERSION}-SNAPSHOT'/" build.
 # git commit 후 push
 git add .
 git commit -m "릴리즈: :bookmark: v${NEW_VERSION} 릴리즈"
-git tag -a v${NEW_VERSION} -m "$(date '+%Y.%m.%d')"
+git tag v${NEW_VERSION}
 git push --tags
