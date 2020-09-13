@@ -13,7 +13,7 @@ fi
 git pull
 
 # package.json 파일에 버전 번호 변경
-sed -i 's/"version": "'.*'",$/"version": "${NEW_VERSION}",/' package.json
+sed -i 's/"version": "'.*'",$/"version": "'${NEW_VERSION}'",/' package.json
 
 # git 저장소에 push
 git add .
