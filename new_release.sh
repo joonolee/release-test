@@ -17,6 +17,6 @@ sed -i "s/^version: .*$/version: ${NEW_VERSION}/" pubspec.yaml
 
 # git 저장소에 push
 git add .
-git commit -m "릴리즈: :bookmark: v${NEW_VERSION} 릴리즈"
-git tag v${NEW_VERSION}
+git commit -m "릴리즈: :bookmark: v${NEW_VERSION%\+*} 릴리즈"
+git tag v${NEW_VERSION%\+*}
 git push --tags
